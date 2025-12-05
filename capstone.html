@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Genshin Impact — An Elegy for Faded Moonlight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="15" stroke="#c4a67e" stroke-width="2"/>
+          <path d="M16 8V24M8 16H24" stroke="#c4a67e" stroke-width="1.5"/>
+        </svg>
+        <span>Genshin Impact</span>
+      </div>
+
+      <nav>
+        <button class="menu-button" aria-expanded="false" aria-controls="main-menu" id="menuBtn">☰</button>
+        <ul class="nav-links" id="main-menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#characters">Characters</a></li>
+          <li><a class="nav-link" href="#news">News</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-only">
+        <a class="download-btn" href="/mnt/data/1A383EBF-51B4-4155-AABA-C300D5C5D419.png" download id="downloadAnchor">Download</a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:10px">
+        <button id="themeToggle" aria-pressed="false" title="Toggle light/dark">🌓</button>
+        <a class="download-btn" href="/mnt/data/1A383EBF-51B4-4155-AABA-C300D5C5D419.png" download>Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Hero" role="region">
+      <div class="inner container">
+        <h1 id="mainTitle">An Elegy for Faded Moonlight</h1>
+        <p>A world awaits your exploration</p>
+        <div class="actions hero-actions">
+          <a class="btn btn-primary" href="#characters">Play Now</a>
+          <a class="btn btn-ghost" href="#features">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2 class="section-title">Why Genshin Impact?</h2>
+      <div class="features-grid container">
+        <div class="feature">
+          <div class="icon">🌍</div>
+          <h3>Open World</h3>
+          <p>Explore vast regions, puzzles, and hidden secrets.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">⚔️</div>
+          <h3>Combat</h3>
+          <p>Elemental combos and dynamic combat mechanics.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">👥</div>
+          <h3>Characters</h3>
+          <p>Collect and build teams of unique characters.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🎮</div>
+          <h3>Cross-Platform</h3>
+          <p>Play on PC, console, and mobile seamlessly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="characters" class="characters">
+      <h2 class="section-title">Featured Characters</h2>
+      <div class="character-grid container" id="characterGrid">
+
+        <article class="character-card" data-name="Hu Tao" data-element="PYRO" data-desc="Director of the Wangsheng Funeral Parlor" data-img="https://imgix.bustle.com/uploads/image/2021/10/1/db9e8505-ee93-4c3a-9073-f922e45783dd-e6tso_fwqay-aao.jpeg?w=680&h=520&fit=crop&crop=focalpoint&dpr=2&fp-x=0.552&fp-y=0.2147">
+          <div class="character-image">
+            <span class="element-badge">PYRO</span>
+            <img loading="lazy" src="https://imgix.bustle.com/uploads/image/2021/10/1/db9e8505-ee93-4c3a-9073-f922e45783dd-e6tso_fwqay-aao.jpeg?w=680&h=520&fit=crop&crop=focalpoint&dpr=2&fp-x=0.552&fp-y=0.2147" alt="Hu Tao">
+          </div>
+          <div class="character-body">
+            <h3>Hu Tao</h3>
+            <p>Director of the Wangsheng Funeral Parlor</p>
+            <button class="btn" data-action="open-detail">View</button>
+          </div>
+        </article>
+
+        <article class="character-card" data-name="Yelan" data-element="HYDRO" data-desc="An enigmatic figure shrouded in mystery" data-img="https://oyster.ignimgs.com/mediawiki/apis.ign.com/genshin-impact/a/a3/Genshin-impact-yelan-splash.jpg?width=608&dpr=2&format=jpg&auto=webp&quality=80">
+          <div class="character-image">
+            <span class="element-badge">HYDRO</span>
+            <img loading="lazy" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/genshin-impact/a/a3/Genshin-impact-yelan-splash.jpg?width=608&dpr=2&format=jpg&auto=webp&quality=80" alt="Yelan">
+          </div>
+          <div class="character-body">
+            <h3>Yelan</h3>
+            <p>An enigmatic figure shrouded in mystery</p>
+            <button class="btn" data-action="open-detail">View</button>
+          </div>
+        </article>
+
+        <article class="character-card" data-name="Raiden Shogun" data-element="ELECTRO" data-desc="Her Excellency, the Raiden Shogun" data-img="https://www.cyberpowerpc.com/blog/w/wp-content/uploads/2021/09/genshin-impact-raiden-shogun.jpg">
+          <div class="character-image">
+            <span class="element-badge">ELECTRO</span>
+            <img loading="lazy" src="https://www.cyberpowerpc.com/blog/w/wp-content/uploads/2021/09/genshin-impact-raiden-shogun.jpg" alt="Raiden Shogun">
+          </div>
+          <div class="character-body">
+            <h3>Raiden Shogun</h3>
+            <p>Her Excellency, the Raiden Shogun</p>
+            <button class="btn" data-action="open-detail">View</button>
+          </div>
+        </article>
+
+        <article class="character-card" data-name="Ayaka" data-element="CRYO" data-desc="Scion of the Kamisato Clan" data-img="https://assetsio.gnwcdn.com/Genshin-Impact-Ayaka-materials%2C-kit%2C-and-Constellations-cover.jpg?width=690&quality=85&format=jpg&dpr=2&auto=webp">
+          <div class="character-image">
+            <span class="element-badge">CRYO</span>
+            <img loading="lazy" src="https://assetsio.gnwcdn.com/Genshin-Impact-Ayaka-materials%2C-kit%2C-and-Constellations-cover.jpg?width=690&quality=85&format=jpg&dpr=2&auto=webp" alt="Ayaka">
+          </div>
+          <div class="character-body">
+            <h3>Ayaka</h3>
+            <p>Scion of the Kamisato Clan</p>
+            <button class="btn" data-action="open-detail">View</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="news">
+      <h2 class="section-title">Latest News</h2>
+      <div class="news-grid container">
+        <article class="news-card">
+          <img loading="lazy" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*SlaXvjkl6MsfWXJamDDK_A.jpeg" alt="news">
+          <div class="body">
+            <h4>Version 5.0 — New Region</h4>
+            <p>Explore breathtaking landscapes and embark on new adventures.</p>
+            <a class="read-more" href="#">Read More →</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img loading="lazy" src="https://www.theupcoming.co.uk/wp-content/uploads/2025/09/Genshin-Impact-u7buy-image.jpg" alt="event">
+          <div class="body">
+            <h4>Limited-Time Event</h4>
+            <p>Join the event for exclusive rewards and fun activities.</p>
+            <a class="read-more" href="#">Read More →</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img loading="lazy" src="https://cdn.gamestegy.com/posts-images/zhongli-rerun-banner-or-release-date-analysis-OnDlKYMakr.jpg?width=1300&aspect_ratio=16:9" alt="rerun">
+          <div class="body">
+            <h4>Character Rerun: Zhongli</h4>
+            <p>One of the strongest Archons returns to banners.</p>
+            <a class="read-more" href="#">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Genshin Impact — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <div class="hero" id="modalHero" style="min-height:200px;background-size:cover;background-position:center"></div>
+      <div style="padding:18px">
+        <h3 id="modalName" style="color:#ffcc33;margin-bottom:6px"></h3>
+        <p id="modalDesc" style="color:#d6e6ff"></p>
+        <div style="margin-top:12px">
+          <button class="modal-close" id="modalClose">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
